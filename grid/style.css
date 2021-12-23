@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    /* fr: 1배 */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 10px;
+}
+
+.grid-container div {
+    border: 1px solid black;
+}
+
+.grid-nav {
+    /* 총 5개 세로선 중에 1부터 5까지 차지해라~ */
+    grid-column: 1/5;
+    background-color: pink;
+}
+
+.grid-sidebar {
+    grid-row: 2/4;
+    background-color: orange;
+}
