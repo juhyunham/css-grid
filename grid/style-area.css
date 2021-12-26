@@ -1,0 +1,31 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header header header header"
+        "side content content content"
+        "side content content content";
+    color: #fff;
+    font-size: 30px;
+}
+
+.grid-container div {
+    border: 1px solid #333;
+}
+
+.grid-nav {
+    grid-area: header;
+    background-color: pink;
+}
+
+.grid-sidebar {
+    grid-area: side;
+    background-color: orange;
+}
+
+.grid-content {
+    grid-area: content;
+    background-color: green;
+}
